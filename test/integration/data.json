@@ -1,0 +1,54 @@
+
+module.export: {
+
+  "tenantid": "5551aca9e179c39b760f7a1a",
+  "user": {
+    "id": "595b8e2f22864e43da5604c6",
+    "username": "owner"
+  },
+  "created": 360763200,
+  "modified": 1465300800,
+  "items": 	[
+    {
+      "productId": "1",
+      "title": "laptop",
+      "imagePath": "",
+      "price": 500,
+      "groupId": "1324234",
+      "merchantId": "100001",
+      "GTIN": "11111",
+      "currency": "USD",
+      "quantity": 1,
+      "shippingPrice": 0,
+      "shippingMethods": [
+        {
+          "id": 1,
+          "methodName": "Client Pickup",
+          "price": 0,
+          "selected": true
+        },
+        {
+          "id": 2,
+          "methodName": "Liban Post",
+          "price": 5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "methodName": "Urgent Delivery",
+          "price": 20,
+          "selected": false
+        }
+      ],
+      "filters":
+      {
+        "color": "black",
+        "weight": "2kg"
+      }
+
+    }
+
+
+  ]
+
+}
