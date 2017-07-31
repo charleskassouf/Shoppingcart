@@ -5,11 +5,18 @@ var BLModule = require("./lib/index");
 
 var service = new soajs.server.service(config);
 
+/**
+ * initials the model
+ *
+ * @param req
+ * @param res
+ * @param cb callback
+ */
 function initBLModel(req, res, cb) {
     var modelName = "mongo";
-    /**if (process.env.SOAJS_TEST && req.soajs.inputmaskData.model) {
+    if (process.env.SOAJS_TEST && req.soajs.inputmaskData.model) {
         modelName = req.soajs.inputmaskData.model;
-    }*/
+    }
     BLModule.init(modelName, function (error, BL) {
         if (error) {
             req.soajs.log.error(error);
